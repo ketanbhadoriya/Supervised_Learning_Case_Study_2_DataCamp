@@ -1,0 +1,23 @@
+---
+title: "Using annual Stack Overflow Developers Survey (2017) Predicting which Stack-Overflow Developers are more likely to work remotely."
+author: "Ketan Bhadoriya"
+output: html_document
+---
+
+######Note : Data Taken from Datacamp.com from a Supervised Learning Course and Case Study performed under the guidance of the Tutor Julia Silge Data Scientist at Stack Overflow.
+
+###Loading the required packages and the Data
+
+```{r,warning=FALSE,message=FALSE}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(RCurl)
+library(caret)
+
+url_data <- "https://assets.datacamp.com/production/course_6013/datasets/stackoverflow.csv"
+
+x <- getURL(url_data)
+
+#cars2018 <- read.csv(textConnection(x))
+```
